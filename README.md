@@ -10,3 +10,13 @@ var geom = (ManagedNetSdoGeometry) reader["geom"];
 ```
 
 I've added some WKT generation functions that enable string serialization on the retrieved Oracle geometries. The method Get_WKT() generates a string serialized version of the retrieved geometry.
+
+```
+string serializedGeom = geom.Get_WKT();
+```
+
+For a point geometry this returns something like:
+
+```
+POINT (3.9065563 51.7541273)
+```
