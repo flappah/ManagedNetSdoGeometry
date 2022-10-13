@@ -8,3 +8,5 @@ Usage is similar to the one in NetSdoGeometry. The code snippet below shows how 
 var reader = command.ExecuteReader();
 var geom = (ManagedNetSdoGeometry) reader["geom"];
 ```
+
+I've added some WKT generation functions that enable string serialization on the retrieved Oracle geometries. The method Get_WKT() generates a string serialized version of the retrieved geometry.
